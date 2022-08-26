@@ -1,0 +1,8 @@
+######## 配置项目启动端口号
+server:
+  port: 22229
+spring:
+  application:
+    name: witmed-emr-provider
+  profiles:
+    active: data,commons

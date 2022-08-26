@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>witmed-commons</artifactId>
+  <!--配置打包方式 jar-->
+  <packaging>jar</packaging>
+
+ <!--配置父级依赖：Medical Parent [BEGIN]-->
+  <parent>
+    <groupId>cn.ekgc.witmed</groupId>
+    <artifactId>witmed-parent</artifactId>
+    <version>1.0.0</version>
+  </parent>
+ <!--配置父级依赖：Medical Parent [END]-->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  <!--配置依赖：Spring Cloud Starter OpenFeig[BEGIN]-->
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+    </dependency>
+    <!--配置依赖：Spring Cloud Starter OpenFeig[END]-->
+
+    <!--配置依赖: Spring Boot Start Data Redis[BEGIN]-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+    <!--配置依赖: Spring Boot Start Data Redis[END]-->
+
+    <!--配置依赖：Project Lombok[BEGIN]-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+    </dependency>
+    <!--配置依赖：Project Lombok[END]-->
+
+    <!--配置依赖：MapStruct Processor[BEGIN]-->
+    <dependency>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct-processor</artifactId>
+      <version>${mapstruct-processor.version}</version>
+    </dependency>
+    <!--配置依赖：MapStruct Processor[END]-->
+
+    <!--配置依赖：Hutool All[BEGIN]-->
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>${hutool-all.version}</version>
+    </dependency>
+    <!--配置依赖：Hutool All[END]-->
+
+    <!--配置依赖：Spring Boot Starter Validation[BEGIN]-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
+    <!--配置依赖：Spring Boot Starter Validation[END]-->
+  </dependencies>
+</project>

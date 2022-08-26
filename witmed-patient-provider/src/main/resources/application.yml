@@ -1,0 +1,8 @@
+######## 配置项目启动端口号
+server:
+  port: 33339
+spring:
+  application:
+    name: witmed-patient-provider
+  profiles:
+    active: data,commons

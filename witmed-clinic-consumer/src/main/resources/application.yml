@@ -1,0 +1,8 @@
+######## 配置项目启动端口号
+server:
+  port: 44444
+spring:
+  application:
+    name: witmed-clinic-consumer
+  profiles:
+    active: commons
